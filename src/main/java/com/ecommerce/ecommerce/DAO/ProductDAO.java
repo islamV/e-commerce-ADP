@@ -3,6 +3,9 @@ package com.ecommerce.ecommerce.DAO;
 
 import com.ecommerce.ecommerce.model.Product;
 import com.ecommerce.ecommerce.model.Review;
+import com.ecommerce.ecommerce.model.Role;
+import com.ecommerce.ecommerce.model.User;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -160,5 +163,68 @@ public class ProductDAO {
             throw new RuntimeException("Could not delete product.");
         }
     }
+
+
+
+    // Authenticate user
+    public User findUser(String username, String password) {
+        String query = "SELECT * FROM users WHERE username=? AND password=?";
+        try (Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
+             PreparedStatement ps = conn.prepareStatement(query)) {
+            ps.setString(1, username);
+            ps.setString(2, password);
+            try (ResultSet rs = ps.executeQuery()) {
+                if (rs.next()) {
+                    System.out.println(" User found: " + username);
+                    return new User(
+                            rs.getInt("id"),
+                            rs.getString("username"),
+                            rs.getString("password"),
+                            Role.valueOf(rs.getString("role").toUpperCase())
+                    );
+                }
+            }
+        } catch (SQLException e) {
+            System.err.println("authentication query failed: " + e.getMessage());
+        }
+        return null;
+    }
+
+    // Register new user
+    public void registerUser(String username, String password, String role) {
+        String query = "INSERT INTO users (username, password, role) VALUES (?, ?, ?)";
+        try (Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
+             PreparedStatement ps = conn.prepareStatement(query)) {
+            ps.setString(1, username);
+            ps.setString(2, password);
+            ps.setString(3, role.toUpperCase());
+            ps.executeUpdate();
+            System.out.println(" New user registered: " + username);
+
+        } catch (SQLException e) {
+            if (e.getErrorCode() == 1062) { // MySQL Duplicate Entry Error Code
+                throw new RuntimeException("This username is already taken. Please choose another one.");
+            }
+            System.err.println(" Registration failed: " + e.getMessage());
+            throw new RuntimeException(" Could not create account.");
+        }
+    }
+
+    // For remove user
+    public void removeUser(String username) {
+        try (Connection conn = DriverManager.getConnection(url, dbUsername, dbPassword);
+             PreparedStatement ps = conn.prepareStatement("DELETE FROM users WHERE username = ?")) {
+            ps.setString(1, username);
+            ps.executeUpdate();
+            System.out.println("User account deleted: " + username);
+        } catch (SQLException e) {
+            System.err.println("Failed to delete user '" + username + "': " + e.getMessage());
+            throw new RuntimeException("Failed to delete account.");
+        }
+    }
+
+
+
+
 
 }
