@@ -80,6 +80,30 @@ public class EcommerceService {
         clearCache(); // clearing old cache
     }
 
+    public User authenticateUser(String username, String password) throws Exception {
+        System.out.println(" login for: " + username);
+        User user = productDAO.findUser(username, password);
+        if (user == null) throw new Exception(" Invalid credentials.");
+        return user;
+    }
+
+    public void createAccount(String username, String password) throws Exception {
+        if (username == null || username.trim().length() < 3) {
+            throw new Exception(" Username must be at least 3 characters.");
+        }
+        // Password Complexity Validation
+        if (password == null || password.length() < 8) {
+            throw new Exception("Password must be at least 8 characters long.");
+        }
+        String passwordPattern = "^(?=.*[A-Z])(?=.*[0-9])(?=.*[@#$%^&+=!]).*$";
+        if (!password.matches(passwordPattern)) {
+            throw new Exception(" Password must contain at least one uppercase letter, one digit, and one special character (@#$%^&+=!).");
+        }
+        System.out.println(" Registering new user: " + username);
+
+        productDAO.registerUser(username.trim(), password, "USER");
+    }
+
   
     private void clearCache() {
         try (Jedis jedis = new Jedis("127.0.0.1", 6379)) {
