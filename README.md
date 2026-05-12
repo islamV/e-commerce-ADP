@@ -45,14 +45,14 @@ The relational schema is optimized for an e-store workflow:
 
 
 
- **Core Backend**  Java (Jakarta EE / Servlets & JSP)
- **Web Server**  Apache Tomcat 11.0 
- **Authentication**  Hybrid JWT + Redis Session Management 
- **Security**  BCrypt Password Hashing 
- **RDBMS**  MySQL via JDBC 
- **In-Memory Store**  Redis (Sessions, Caching, Rate Limiting) 
- **Virtualization**  Docker 
- **Data Format**  GSON (JSON Serialization) 
+ - **Core Backend**  Java (Jakarta EE / Servlets & JSP)
+ - **Web Server**  Apache Tomcat 11.0 
+ - **Authentication**  Hybrid JWT + Redis Session Management 
+ - **Security**  BCrypt Password Hashing 
+ - **RDBMS**  MySQL via JDBC 
+ - **In-Memory Store**  Redis (Sessions, Caching, Rate Limiting) 
+ - **Virtualization**  Docker 
+ - **Data Format**  GSON (JSON Serialization) 
 
 ---
 
