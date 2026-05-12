@@ -63,7 +63,7 @@ Run Redis via Docker to handle sessions and caching:
 ```bash
 docker run --name ecommerce-redis -p 6379:6379 -d redis
 ```
-###  Database Configuration (MySQL)
+### 2. Database Configuration (MySQL)
 1.  **Start MySQL:** Ensure **MySQL** is running via **XAMPP**.
 2.  **Create Database:** Create a new database named `products`.
 3.  **Initialize Schema:** Execute the provided SQL scripts to create and seed the following tables:
@@ -72,22 +72,9 @@ docker run --name ecommerce-redis -p 6379:6379 -d redis
     * `reviews`
 4.  **Verify Connection:** check your database credentials (username/password) in the `DBConnection.java` file.
 
-###  Dependency Management
-This project uses **Maven** to manage external libraries (Jedis, JWT, BCrypt, etc.). Build the project to download all necessary dependencies:
-```bash
-mvn clean install
-```
 
- Deployment on Tomcat
-Open IDE: Open the project in IntelliJ IDEA.
 
-Server Config: Configure a Tomcat Server in the Run/Debug Configurations menu.
-
-Artifacts: In the Deployment tab, add the artifact: e-commerce:war exploded.
-
-Context Path: Set the Application Context to /e-commerce to ensure all paths resolve correctly.
-
-4. Accessing the Application
+### 3. Accessing the Application
 Once the server is running, you can access the platform at:
 
 Login Page: http://localhost:8080/e-commerce/login.jsp
