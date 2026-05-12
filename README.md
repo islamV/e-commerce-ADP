@@ -76,6 +76,8 @@ docker run --name ecommerce-redis -p 6379:6379 -d redis
 This project uses **Maven** to manage external libraries (Jedis, JWT, BCrypt, etc.). Build the project to download all necessary dependencies:
 ```bash
 mvn clean install
+```
+
  Deployment on Tomcat
 Open IDE: Open the project in IntelliJ IDEA.
 
