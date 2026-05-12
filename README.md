@@ -26,7 +26,9 @@ Every request is handled by a custom security filter before reaching the main ap
 * Enforcing global security policies.
 
 ### Login & Signup Flow
-* **Login:** Credentials are verified against **MySQL**. Upon success, a **JWT** is signed and a session entry is created in **Redis**. This hybrid approach allows for stateless identity with server-side session control (forced logout/invalidation).
+* **Login:** Credentials are verified against **MySQL**. Upon success,
+ a **JWT** is signed and a session entry is created in **Redis**.
+ This hybrid approach allows for stateless identity with server-side session control (forced logout/invalidation).
 * **Signup:** Validates input data, hashes passwords securely using **BCrypt**, and persists the new record in the database.
 
 ---
@@ -60,7 +62,7 @@ The relational schema is optimized for an e-store workflow:
 Run Redis via Docker to handle sessions and caching:
 ```bash
 docker run --name ecommerce-redis -p 6379:6379 -d redis
-
+```
 ###  Database Configuration (MySQL)
 1.  **Start MySQL:** Ensure **MySQL** is running via **XAMPP**.
 2.  **Create Database:** Create a new database named `products`.
