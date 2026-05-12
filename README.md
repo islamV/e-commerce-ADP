@@ -75,15 +75,9 @@ docker run --name ecommerce-redis -p 6379:6379 -d redis
 
 
 ### 3. Accessing the Application
-Once the server is running, you can access the platform at:
+Once the Tomcat server  and Redis service are running, you can access the platform at:
 
 Login Page: http://localhost:8080/e-commerce/login.jsp
-
-Default Admin Credentials:
-
-Username: admin
-
-Password: admin123
 
 
 ---
