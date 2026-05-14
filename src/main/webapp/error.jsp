@@ -84,9 +84,7 @@
 
   <a href="ProductsMain" class="btn-home"><i class="fas fa-arrow-left"></i> Back to Dashboard</a>
 
-  <div class="footer-note">
-    Secure Backend Node | Error ID: <%= java.util.UUID.randomUUID().toString().substring(0, 8).toUpperCase() %>
-  </div>
+
 </div>
 </body>
 </html>

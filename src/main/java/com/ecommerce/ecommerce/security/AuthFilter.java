@@ -23,8 +23,8 @@ public class AuthFilter implements Filter {
         HttpServletResponse response=(HttpServletResponse) res;
         String path =request.getRequestURI().substring(request.getContextPath().length());
 
-        // Allow access to login/register/error page without auth
-        if(path.contains("login.jsp") || path.contains("/login") || path.contains("/register") |path.contains("error.jsp")){
+         // Allow access to login/register/error page without auth
+        if(path.contains("login.jsp") || path.contains("/login") || path.contains("/register") || path.contains("error.jsp")){
 
             chain.doFilter(request,response);
             return;

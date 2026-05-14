@@ -23,6 +23,12 @@ public class RegisterServlet extends HttpServlet {
         String password = request.getParameter("password");
 
         try {
+
+            // Validation
+            if (username == null || username.isBlank()
+                    || password == null || password.isBlank()) {
+                throw new RuntimeException("All fields required.");
+            }
             ecommerceService.createAccount(username, password);
             // If success ,Redirect to login page
             request.setAttribute("successMessage", "Account created successfully! You can login now.");

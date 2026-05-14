@@ -2,6 +2,8 @@ package com.ecommerce.ecommerce.service;
 
 
 import com.ecommerce.ecommerce.DAO.ProductDAO;
+import com.ecommerce.ecommerce.DAO.ReviewDAO;
+import com.ecommerce.ecommerce.DAO.UserDAO;
 import com.ecommerce.ecommerce.model.Product;
 import com.ecommerce.ecommerce.model.Review;
 import com.ecommerce.ecommerce.model.User;
@@ -15,6 +17,8 @@ import java.util.List;
 // Service layer inculde business logic ,caching and rate limiting
 public class EcommerceService {
     private ProductDAO productDAO=new ProductDAO();
+    private UserDAO userDAO=new UserDAO();
+    private ReviewDAO reviewDAO=new ReviewDAO();
     private Gson gson=new Gson();
 
 
@@ -82,7 +86,7 @@ public class EcommerceService {
 
     public User authenticateUser(String username, String password) throws Exception {
         System.out.println(" login for: " + username);
-        User user = productDAO.findUser(username, password);
+        User user = userDAO.findUser(username, password);
         if (user == null) throw new Exception(" Invalid credentials.");
         return user;
     }
@@ -101,10 +105,9 @@ public class EcommerceService {
         }
         System.out.println(" Registering new user: " + username);
 
-        productDAO.registerUser(username.trim(), password, "USER");
+        userDAO.registerUser(username.trim(), password, "USER");
     }
 
-  
     private void clearCache() {
         try (Jedis jedis = new Jedis("127.0.0.1", 6379)) {
             jedis.del("products_cache");
@@ -119,13 +122,13 @@ public class EcommerceService {
     }
     public List<Review> fetchReviewsForProduct(int productId) throws Exception {
 
-        return productDAO.getReviewsByProductId(productId); }
+        return reviewDAO.getReviewsByProductId(productId); }
     public List<Review> fetchAllGeneralReviews() throws Exception {
-        return productDAO.getAllReviews(); }
+        return reviewDAO.getAllReviews(); }
     public void deleteProductAndClearCache(int id) throws Exception {
         productDAO.removeProduct(id); clearCache(); }
     public void deleteUserAccount(String username) throws Exception {
-        productDAO.removeUser(username);
+        userDAO.removeUser(username);
         try (Jedis jedis = new Jedis("localhost", 6379)) {
             jedis.del("rate:" + username);
             jedis.del("role:" + username);

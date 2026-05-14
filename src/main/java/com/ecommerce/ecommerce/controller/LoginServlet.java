@@ -12,6 +12,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import redis.clients.jedis.Jedis;
 import java.io.IOException;
+import java.util.Date;
 import java.util.UUID;
 
 @WebServlet("/login")
@@ -22,6 +23,13 @@ public class LoginServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
+
+        if (username == null || username.isBlank()
+                || password == null || password.isBlank()) {
+            request.setAttribute("errorMessage", "Username and password required.");
+            request.getRequestDispatcher("login.jsp").forward(request, response);
+            return;
+        }
 
         try {
             User user = ecommerceService.authenticateUser(username, password);
@@ -36,6 +44,8 @@ public class LoginServlet extends HttpServlet {
                     // Cookies for session
                     Cookie sessionCookie = new Cookie("SESSION_ID", sessionId);
                     sessionCookie.setPath("/");
+                    sessionCookie.setHttpOnly(true); // Protect against XSS
+                    sessionCookie.setMaxAge(3600);
                     response.addCookie(sessionCookie);
                     System.out.println("Redis session created.");
                 } catch (Exception e) {
@@ -46,13 +56,16 @@ public class LoginServlet extends HttpServlet {
                 String token = JWT.create()
                         .withClaim("user", user.getName())
                         .withClaim("role", user.getRole().name())
+                        .withExpiresAt(new Date(System.currentTimeMillis() + 3600000))
                         .sign(Algorithm.HMAC256("secret"));
                 System.out.println(" JWT token signed.");
 
                 // Cookies
                 Cookie jwtCookie = new Cookie("JWT_TOKEN", token);
-                jwtCookie.setHttpOnly(true); // Protect against XSS
+                jwtCookie.setHttpOnly(true);
                 jwtCookie.setPath("/");
+                jwtCookie.setHttpOnly(true);
+                jwtCookie.setMaxAge(3600);
                 response.addCookie(jwtCookie);
 
                 response.sendRedirect("ProductsMain");

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="TomcatDeploymentHistory">
+    <option name="entries">
+      <list>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778656287581" />
+          <option name="durationMs" value="122694410" />
+          <option name="startupTimeMs" value="1585" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="5" />
+          <option name="warningCount" value="2" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778655792550" />
+          <option name="durationMs" value="285540" />
+          <option name="startupTimeMs" value="1513" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="2" />
+          <option name="warningCount" value="2" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778618257993" />
+          <option name="durationMs" value="4705277" />
+          <option name="startupTimeMs" value="8864" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="warningCount" value="3" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778617831800" />
+          <option name="durationMs" value="397753" />
+          <option name="startupTimeMs" value="7676" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="warningCount" value="3" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778617550408" />
+          <option name="durationMs" value="260042" />
+          <option name="startupTimeMs" value="9007" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="1" />
+          <option name="warningCount" value="3" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778617373609" />
+          <option name="durationMs" value="144231" />
+          <option name="startupTimeMs" value="7293" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="1" />
+          <option name="warningCount" value="3" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778617141661" />
+          <option name="durationMs" value="199436" />
+          <option name="startupTimeMs" value="10272" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="1" />
+          <option name="warningCount" value="3" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778616476018" />
+          <option name="durationMs" value="594259" />
+          <option name="startupTimeMs" value="4261" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="1" />
+          <option name="warningCount" value="3" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778616076444" />
+          <option name="durationMs" value="386197" />
+          <option name="startupTimeMs" value="2244" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="2" />
+          <option name="warningCount" value="3" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778615633149" />
+          <option name="durationMs" value="441579" />
+          <option name="startupTimeMs" value="1672" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="1" />
+          <option name="warningCount" value="2" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778614098261" />
+          <option name="durationMs" value="1158072" />
+          <option name="startupTimeMs" value="2239" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="warningCount" value="3" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778613772244" />
+          <option name="durationMs" value="214341" />
+          <option name="startupTimeMs" value="1820" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="1" />
+          <option name="warningCount" value="3" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778613666167" />
+          <option name="durationMs" value="102451" />
+          <option name="startupTimeMs" value="1740" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="1" />
+          <option name="warningCount" value="3" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778613343749" />
+          <option name="durationMs" value="318860" />
+          <option name="startupTimeMs" value="1637" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="1" />
+          <option name="warningCount" value="3" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778613201488" />
+          <option name="durationMs" value="139171" />
+          <option name="startupTimeMs" value="1687" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="1" />
+          <option name="warningCount" value="3" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778612507064" />
+          <option name="durationMs" value="689056" />
+          <option name="startupTimeMs" value="1706" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="1" />
+          <option name="warningCount" value="2" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778612319540" />
+          <option name="durationMs" value="67312" />
+          <option name="startupTimeMs" value="129" />
+          <option name="success" value="true" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778612250040" />
+          <option name="durationMs" value="7224" />
+          <option name="startupTimeMs" value="147" />
+          <option name="success" value="true" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778612081495" />
+          <option name="durationMs" value="163523" />
+          <option name="startupTimeMs" value="157" />
+          <option name="success" value="true" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat" />
+          <option name="timestampEpochMs" value="1778611865363" />
+          <option name="durationMs" value="173765" />
+          <option name="startupTimeMs" value="120" />
+          <option name="success" value="true" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Unnamed" />
+          <option name="timestampEpochMs" value="1778611810362" />
+          <option name="durationMs" value="21063" />
+          <option name="startupTimeMs" value="136" />
+          <option name="success" value="true" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="DevTomcat: /e-commerce (Maven Web)" />
+          <option name="timestampEpochMs" value="1778611700822" />
+          <option name="durationMs" value="65821" />
+          <option name="startupTimeMs" value="271" />
+          <option name="success" value="true" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="DevTomcat: /e-commerce (Maven Web)" />
+          <option name="timestampEpochMs" value="1778611094579" />
+          <option name="durationMs" value="605975" />
+          <option name="startupTimeMs" value="258" />
+          <option name="success" value="true" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="Tomcat Server" />
+          <option name="timestampEpochMs" value="1778354047172" />
+          <option name="durationMs" value="1004094" />
+          <option name="startupTimeMs" value="1793" />
+          <option name="artifactNames">
+            <list>
+              <option value="e-commerce:war exploded" />
+            </list>
+          </option>
+          <option name="success" value="true" />
+          <option name="errorCount" value="5" />
+          <option name="warningCount" value="3" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="DevTomcat: /e-commerce (Maven Web)" />
+          <option name="timestampEpochMs" value="1778354044128" />
+          <option name="durationMs" value="1007059" />
+          <option name="startupTimeMs" value="298" />
+          <option name="success" value="true" />
+        </HistoryEntry>
+        <HistoryEntry>
+          <option name="configName" value="DevTomcat: /e-commerce (Maven Web)" />
+          <option name="timestampEpochMs" value="1778354020674" />
+          <option name="durationMs" value="18632" />
+          <option name="startupTimeMs" value="234" />
+          <option name="success" value="true" />
+        </HistoryEntry>
+      </list>
+    </option>
+  </component>
+</project>

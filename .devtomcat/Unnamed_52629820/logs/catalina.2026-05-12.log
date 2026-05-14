@@ -1,0 +1,43 @@
+12-May-2026 21:50:11.072 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/11.0.21
+12-May-2026 21:50:11.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Mar 30 2026 14:59:44 UTC
+12-May-2026 21:50:11.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 11.0.21.0
+12-May-2026 21:50:11.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 10
+12-May-2026 21:50:11.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+12-May-2026 21:50:11.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+12-May-2026 21:50:11.075 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17.0.8
+12-May-2026 21:50:11.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.8+9-LTS-211
+12-May-2026 21:50:11.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+12-May-2026 21:50:11.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         C:\e-commerce\.devtomcat\Unnamed_52629820
+12-May-2026 21:50:11.076 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         E:\apache-tomcat-11.0.21
+12-May-2026 21:50:11.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote
+12-May-2026 21:50:11.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.port=1099
+12-May-2026 21:50:11.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.ssl=false
+12-May-2026 21:50:11.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.authenticate=false
+12-May-2026 21:50:11.078 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcom.sun.management.jmxremote.local.only=false
+12-May-2026 21:50:11.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+12-May-2026 21:50:11.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+12-May-2026 21:50:11.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+12-May-2026 21:50:11.079 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+12-May-2026 21:50:11.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+12-May-2026 21:50:11.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=E:\apache-tomcat-11.0.21
+12-May-2026 21:50:11.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=C:\e-commerce\.devtomcat\Unnamed_52629820
+12-May-2026 21:50:11.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=C:\e-commerce\.devtomcat\Unnamed_52629820\temp
+12-May-2026 21:50:11.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=C:\e-commerce\.devtomcat\Unnamed_52629820\conf\logging.properties
+12-May-2026 21:50:11.080 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+12-May-2026 21:50:11.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dserver.port=8080
+12-May-2026 21:50:11.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dserver.shutdown.port=8005
+12-May-2026 21:50:11.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2025.3.1.1\lib\idea_rt.jar=58955
+12-May-2026 21:50:11.081 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+12-May-2026 21:50:11.084 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [2.0.14] using APR version [1.7.6].
+12-May-2026 21:50:11.088 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.5.5 27 Jan 2026]
+12-May-2026 21:50:11.303 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+12-May-2026 21:50:11.328 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [534] milliseconds
+12-May-2026 21:50:11.390 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+12-May-2026 21:50:11.390 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/11.0.21]
+12-May-2026 21:50:11.409 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+12-May-2026 21:50:11.466 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [136] milliseconds
+12-May-2026 21:50:30.777 INFO [main] org.apache.catalina.core.StandardServer.await A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+12-May-2026 21:50:30.778 INFO [main] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+12-May-2026 21:50:30.886 INFO [main] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+12-May-2026 21:50:30.888 INFO [main] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+12-May-2026 21:50:30.894 INFO [main] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
